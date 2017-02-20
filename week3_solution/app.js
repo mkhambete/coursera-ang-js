@@ -71,7 +71,7 @@ function MenuSearchService($http) {
       var filteredMenu = [];
       if(searchTerm != ""){
         for(var x=0; x<fullMenu.length; x++){
-          if(fullMenu[x].name.toUpperCase().indexOf(searchTerm.toUpperCase()) > -1) {
+          if(fullMenu[x].description.toUpperCase().indexOf(searchTerm.toUpperCase()) > -1) {
             filteredMenu.push(fullMenu[x]);
           }
         }
